@@ -76,9 +76,12 @@ export class ShopComponent implements OnInit {
   }
 
   onPageChanged(event: any){
-    this.shopParams.pageNumber = event;
-    this.getProdcts();
-  }
+    if(this.shopParams.pageNumber !== event)
+    {
+      this.shopParams.pageNumber = event;
+      this.getProdcts();
+    }
+ }
 
   onSearch() {
     this.shopParams.search = this.searcTerm.nativeElement.value;
