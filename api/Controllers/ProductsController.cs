@@ -37,13 +37,11 @@ namespace api.Controllers
             
            var countSpec = new ProductWithFiltersForCountSpecification(productPramas);
 
-
            var totalItems = await _productRepo.CountAsync(countSpec);
 
            var products = await _productRepo.ListAsync(spec);
 
-            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
-
+           var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
 
            return Ok(new Pagination<ProductToReturnDto>(productPramas.PageIndex,productPramas.PageSize,
                                                         totalItems, data));

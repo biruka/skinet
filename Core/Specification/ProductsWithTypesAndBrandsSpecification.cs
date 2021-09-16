@@ -10,7 +10,7 @@ namespace Core.Specification
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
         public ProductsWithTypesAndBrandsSpecification(ProductsSpecParams productParams) : base(
-             x =>(string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
+             x => (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
                  (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
                  (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId
              ))
@@ -19,7 +19,7 @@ namespace Core.Specification
             AddInclude(x => x.ProductBrand);
             ApplyPaging(productParams.PageSize * (productParams.PageIndex - 1),
                         productParams.PageSize);
-            if(!string.IsNullOrEmpty(productParams.Sort))
+            if (!string.IsNullOrEmpty(productParams.Sort))
             {
                 switch (productParams.Sort)
                 {
