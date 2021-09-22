@@ -9,11 +9,10 @@ import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/Interceptors/error.interceptor';
 import {  NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/Interceptors/loading.interceptor';
+import { BasketComponent } from './basket/basket.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [ AppComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
