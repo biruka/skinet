@@ -1,0 +1,3 @@
+Id,DisplayName,UserName,NormalizedUserName,Email,NormalizedEmail,EmailConfirmed,PasswordHash,SecurityStamp,ConcurrencyStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEnd,LockoutEnabled,AccessFailedCount
+0fe5378d-0d62-4d78-978e-902e3c3f1af1,Biruk,biras,BIRAS,biras7070@gmail.com,BIRAS7070@GMAIL.COM,0,AQAAAAEAACcQAAAAEO+EU4NOzyjQ8cw9RTaq75f3zgsoxuwsM/42H6LYozaGBP6Y4cpfV+tTEGDkCAXQHg==,I6CFH7M5PQ6X7K22OY43LMWOYFE6G76T,3b05537f-9c00-4025-8c98-3f228a526884,NULL,0,0,NULL,1,0
+153a4d8f-e567-4c77-983b-90f704b97a69,Bilu,getBlena@gmail.com,GETBLENA@GMAIL.COM,getBlena@gmail.com,GETBLENA@GMAIL.COM,0,AQAAAAEAACcQAAAAEEq6nYsKTUZoMwEZ0GwnFvv41olsuqyCSBodUz1b038XjcbFkzLgtGLU6+TfcgcY3w==,JODFKLKKNL3A53J4W3ZRWU5RQB37462W,51388aea-23eb-483c-b111-36385302a5d7,NULL,0,0,NULL,1,0
